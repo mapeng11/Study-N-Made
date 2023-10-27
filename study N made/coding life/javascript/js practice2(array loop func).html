@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script>
+            function setcolor(color){
+                var alist = document.querySelectorAll('a');
+                    i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color = color;
+                        i = i + 1
+                    }
+                }
+            function nightdayhandler(self){ //self 라는 매개변수에 this가 들어가게 됨.
+                var target = document.querySelector('body');
+                if(self.value ==='night'){
+                    target.style.backgroundColor = 'black';
+                    target.style.color = 'white';
+                    self.value = 'day';
+    
+                    setcolor('powderblue');
+                    } else {
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    self.value = 'night';
+    
+                    setcolor('blue');
+                    }
+                }
+            
+            
+        </script>
+    </head>
+
+    <h1><a href="index.html">study</a></h1>
+
+    <body>
+        <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if(this.value ==='night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
+
+            var alist = document.querySelectorAll('a');
+            i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'powderblue';
+                i = i + 1
+            }
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
+
+            var alist = document.querySelectorAll('a');
+            i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'blue';
+                i = i + 1
+            }
+        }">
+        <br>
+        <input type="button" value="night" onclick="
+        nightdayhandler(this);"> <!--해당 방식이 가장 효율적 함수 사용-->
+
+    <ol>
+        <li><a href="css study.html">study1_css</a></li> 
+        <li><a href="grid.html">study2-grid</a></li>
+        <li><a href="mediaquery.html">study3</a></li> 
+        <li><a href="4.html">study4</a></li> 
+    </ol>
+
+    <div id="article">
+        3.14159265358979323846264338327950288419716939937510582<br>
+        0974944592307816406286208998628034825342117067982148086<br>
+        5132823066470938446095505822317253594081284811174502841<br>
+        0270193852110555964462294895493038196442881097566593344<br>
+        6128475648233786783165271201909145648566923460348610454<br>
+        3266482133936072602491412737245870066063155881748815209<br>
+    </div>
+
+    </body>
+    
+</html>

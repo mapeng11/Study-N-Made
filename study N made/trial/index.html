@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!--html 타입임을 선언-->
+<html>
+<head> <!--말그대로 대가리 부분. 해당 탭에 적용되는 것-->
+  <title>서울시립대 시립GO 랭킹 시스템</title> <!--탭에 뜨는 이름-->
+  <meta charset="utf-8"> <!--meta를 통해 문서에서 사용되는 문자 인코딩 지정-->
+  <link href="style.css" rel="stylesheet"> <!--꾸미는 관계로서(rel) 해당 문서의 style.css를 연결-->
+</head>
+<body>
+<h1><a href="index.html">서울시립대 시립GO 랭킹 시스템</a></h1> <!--h1은 head라는 것의 태그 문법임. 가장 큰 제목이 되는 것. 그다음은 h2, h3-->
+    <form method="post" action="">
+        <h2>로그인</h2>
+        <br> <!--<br>태그는 텍스트 줄바꿈 처리를 해주는 태그 <p>를 쓰기도 하는데 이는 단락을 나누기 좋으며 css를 통해 더 예쁘게 만들 수 있음-->
+
+        <label for="user-id"> <!--여기 user-id를 밑에 id="user-id" 이렇게 동일하게 해줘야 함.-->
+        할 말 <p>아이디: <input type="text" name="id" id="user-id"></p>    <!--<p>를 통해서 단락을 묶어줄 수 있음-->
+        </label>
+
+        <label for="user-id">
+        할 말 <p>비밀번호: <input type="password" name="pw" id="userpass"></p>    
+        </label>
+        <br>
+        
+        <button type="submit">login</button>
+
+    </form> <!--로그인-->
+
+    <strong>Hello <u>world</u></strong>
+    <br>
+    <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png" width="35%">
+    <!--이미지 삽입 및 크기 설정-->
+    <br>
+    <a href="ss" target="_blank" title="안녕? 히히히히힣">여기에 마우스를 가져다 놓아 봐</a> 
+    <!--target _blank는 클릭했을 때 새창으로 연다는 것. title은 마우스를 가져다 댔을 때 뜨는 툴팁.
+    a(anchor) 닻을 놓아 정박. href (hypertext reference) 하이퍼링크가 걸린 하이퍼 텍스트의 참조 사이트!-->
+
+
+<div class="box1">박스1</div>
+<div class="box2">박스2</div>
+
+<ol> <!--order list의 약자 1,2,3 번호를 앞에 붙여줌.-->
+  <li><a href="1.html">기술소개</a></li>  <!--//li를 통해 list 자식이 됨. ol이라는 parent에서-->
+  <li><a href="2.html">기본문법</a></li> <!--만약 부모 태그가 ul 이라면(unorder list) li는 점으로 표시됨.-->
+  <li><a href="3.html">하이퍼텍스트와 속성</a></li>
+  <li><a href="4.html">리스트와 태그의 중첩</a></li> <!--같은 li를 반복해서 하기 싫을 떄, alt 키를 누른 상태로 커서를 복사해서 동시에 입력 가능!-->
+</ol>
+ 
+<h2>선행학습</h2>
+ 
+본 수업을 효과적으로 수행하기 위해서는 웹애플리케이션에 대한 전반적인 이해가 필요합니다. 이를 위해서 준비된 수업은 아래 링크를 통해서 접근하실 수 있습니다. 
+
+
+</body>
+</html>

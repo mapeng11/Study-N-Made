@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML study</title>
+  <meta charset="utf-8">
+  <link href="xxx.css" rel="stylesheet"> <!--꾸미는 관계로서(rel) 해당 문서의 style.css를 연결/ 이후 공부-->
+</head>
+<style>
+  #grid1{
+    border: 5px solid pink;
+    display:grid; /*여기까지만 있으면 효과x */
+    grid-template-columns: 150px 1fr; 
+    /*column은 가로로 열의 비율을 정하는 것.*/
+    /*첫번째 문구(navigation)는 150px의 부피를 가지게 하고 
+    그 두번째 문장은 여분에 모두 때려박는다.
+    (값이 2개이므로 2값만 들어가는 테이블 완성)*/
+
+    /* */
+  }
+  #grid2{
+    border: 5px solid red;
+    display:grid; /*여기까지만 있으면 효과x */
+    grid-template-columns: 2fr 1fr; 
+  }
+
+  #grid3{
+    border: 5px solid green;
+    display:grid; /*여기까지만 있으면 효과x */
+    grid-template-columns: 100px 1fr; 
+  }
+
+  div{
+    border:5px solid gray;
+  }
+</style>
+<body>
+  <div id="grid1">
+    <div>navigation</div> <!--div는 block level이고 span은 incline element임.-->
+    <div>article</div>
+    <div>plus</div>
+  </div>
+
+  <div id="grid2">
+    <div>navigation</div>
+    <div>article</div>
+    <div>plus</div>
+  </div>
+
+  <div id="grid3">
+    <div>look at the right text</div>
+    <div>
+      we can put anything what you want here. this is how wep page maded
+    </div>
+    
+  </div>
+
+  <p>
+  grid-template-columns: 1fr 1fr; = 가로를 1 : 1 비율로 꽉 채운다.<br>
+  grid-template-columns: 1fr 1fr 1fr; = 가로를 1 : 1 : 1 비율로 꽉 채운다.<br>
+  grid-template-columns: repeat(3, 1fr); = 1fr을 3번 반복한다.<br>
+  grid-template-columns: repeat(3, 100px); = 100px를 4번 반복한다.<br>
+  grid-template-columns: minmax(150px, 1fr) repeat(3, 1fr); = 최소 크기 150px 최대 크기 1fr<br>
+  grid-template-columns: max-content repeat(3, 1fr); = 내용물을 가능한 한 펼쳐서 길이를 정한다.<br>
+  grid-template-columns: min-content repeat(3, 1fr); = 내용물을 가능한 한 좁혀서 길이를 정한다.<br>
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); = 자식이 있는 만큼만 적용된다.<br>
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); = 자식 말고도 조건이 되면 가능한 한 빈 공간으로 채운다.<br>
+  </p>
+</body>
+</html>

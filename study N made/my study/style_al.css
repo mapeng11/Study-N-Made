@@ -1,0 +1,174 @@
+body{
+    margin: 0px;
+    background-color: rgb(211, 211, 211);
+}
+
+/*top 배너*/
+body h1{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body h1 a{
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+/*내정보 박스*/
+.my_infoNbuttons{
+    position: relative;
+    margin-top: 180px;
+    margin-left: 12%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    float: left;
+
+    width: 550px;
+    height: 400px;
+    background-color: rgb(230, 230, 230);
+
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-top: none;
+    border-left: none;
+}
+
+/*nick, id 표시*/
+.nick_id{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nick_id:after{
+    white-space: pre;
+    content: "[                       ]";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -45px;
+    font-size: xx-large;
+}
+
+.nick_id p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#id{
+    font-weight:lighter;
+    font-size:small
+}
+
+#nick{
+    font-weight: 900;
+}
+
+/*내 정보 텍스트*/
+#myinfotext{
+    font-weight: bold;
+    text-align: center;
+    z-index: 3;
+    margin-top: 25px;
+}
+
+#myinfotext:after{
+    content:"";
+    display: block;
+    width:150px;
+    border-top: 2px solid black;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/*정보칸 그리드*/
+.grid{
+    background-color: rgb(222, 222, 222);
+    display:grid;
+    grid-template-columns: 1fr 10px 2fr;
+    text-align: center; 
+    margin-top: 15px;
+    margin-left: 45px;
+    margin-right: 45px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='25%2c 410%2c 50%2c136.4%2c 50%2c 410%2c 50%2c 136.4' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    padding: 10px;
+}
+
+.grid div{
+    padding: 10px;
+    font-weight: bold;
+}
+
+/*아래 버튼*/
+.button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-gap: 10px;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px;
+}
+
+/*바로가기 버튼들*/
+.buttonss{
+    display: grid;
+    grid-template-columns: 550px;
+    
+    position: absolute;
+    right: -120%;
+    top: 6.51%;
+
+    font-size: 15px;
+    text-align: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+
+    grid-gap: 50px;
+}
+
+.buttonss a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-top: none;
+    border-left: none;
+}
+
+.buttonss a:nth-child(1){
+    background-color: rgb(255, 99, 71);
+}
+.buttonss a:nth-child(2){
+    background-color: lightskyblue;
+}
+.buttonss a:nth-child(3){
+    background-color: lightgreen;
+}
+.buttonss a:nth-child(4){
+    background-color: black;
+    color: white;
+}

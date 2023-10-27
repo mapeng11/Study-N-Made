@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML study</title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+<body>
+<h1><a href="index.html" style="background-color: coral; color:powderblue;">study</a></h1>  
+
+<input type="button" value="night" onclick="
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white'; 
+">
+
+<input type="button" value="day" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';
+">
+
+<br>
+<input id="night_day" type="button" value="night" onclick="
+  if(document.querySelector('#night_day').value ==='night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('#night_day').value = 'day';
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('#night_day').value = 'night';
+  }
+">
+
+<br>
+<!--리팩토링을 통해 코드의 비효율성, 중복, 유지 보수를 쉽게 만들기-->
+<input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  if(this.value ==='night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+  }
+">
+
+<p>
+  <h1>1===1</h1>
+  <br> <!--true, false 데이터형식을 boolean 형식이라고 함.-->
+  <script>
+    document.write(1===1); 
+  </script>
+</p>
+
+<p>
+  <h1>1===2</h1>
+  <br>
+  <script>
+    document.write(1===2);
+  </script>
+</p>
+
+<p>
+  <h1>1&lt;2</h1>
+  <br>
+  <script>
+    document.write(1<2);
+  </script>
+</p>
+
+<br>
+<h1>conditional statements</h1>
+<h2>program</h2>
+<script>
+  document.write("1<br>");
+  document.write("2<br>");
+  document.write("3<br>");
+  document.write("4<br>");
+</script>
+
+<h2>IF-true</h2>
+<script>
+  document.write("1<br>");
+  if(true){document.write("2<br>");
+  } else{ document.write("3<br>");}
+  document.write("4<br>");
+</script>
+
+<h2>IF-false</h2>
+<script>
+  document.write("1<br>");
+  if(false){document.write("2<br>");
+  } else{ document.write("3<br>");}
+  document.write("4<br>");
+</script>
+
+<div id="grid">
+  <ol>
+    <li><a href="css study.html">study1_css</a></li> 
+    <li><a href="grid.html">study2-grid</a></li>
+    <li><a href="mediaquery.html">study3</a></li> 
+    <li><a href="4.html">study4</a></li> 
+  </ol>
+
+    <div id="article">
+    여기가 대문입니다.<br>
+    3.14159265358979323846264338327950288419716939937510582<br>
+    0974944592307816406286208998628034825342117067982148086<br>
+    5132823066470938446095505822317253594081284811174502841<br>
+    0270193852110555964462294895493038196442881097566593344<br>
+    6128475648233786783165271201909145648566923460348610454<br>
+    3266482133936072602491412737245870066063155881748815209<br>
+    </div>
+</div>
+
+</body>
+</html>
